@@ -24,4 +24,8 @@ Run this command to generate authentication system
 $ php artisan make:auth [Run migration again]
 
 ______
-Step 5: 
+Step 5: Install Fontawsome 
+$ npm install --save-dev @fortawesome/fontawesome-free
+
+______
+Step 6: 

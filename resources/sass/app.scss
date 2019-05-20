@@ -4,9 +4,82 @@
 // Variables
 @import 'variables';
 
+// Fontawsome
+$fa-font-path: "../webfonts";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
 // Bootstrap
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 // Admin-LTE
 @import '../../node_modules/admin-lte/dist/css/adminlte.css';
 
+.text-small {
+    font-size: 1rem !important;
+
+}
+
+.btn-sm {
+    width: 30px !important;
+    padding: 2px !important;
+}
+
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+.d-icon {
+    font-size: 1.2rem;
+    width: 30px;
+    text-align: center;
+}
+
+.d-text {
+    padding-left: 2px;
+}
+
+.d-title {
+    color: white;
+    font-variant: small-caps;
+    padding-left: 4px;
+}
+
+.username {
+    font-variant: small-caps;
+}
+
+.router-link-exact-active {
+    color: white !important;
+    background-color: rgb(14, 90, 167);
+}
+
+
+@media print {
+    .nav.nav-tabs li:not(.active) {
+        display: none;
+    }
+
+    .invoice {
+        padding: 10px 20px;
+    }
+
+    .invoice {
+        background-position: center center;
+        background-repeat: no-repeat;
+
+    }
+
+    .table-responsive table {
+        background-color: transparent !important;
+    }
+
+}
+
+@page {
+    margin: 0;
+}
