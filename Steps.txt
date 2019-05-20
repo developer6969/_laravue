@@ -6,7 +6,7 @@ $ composer create-project --prefer-dist laravel/laravel _laravue
 ______
 Step 2: Install Dependencies
 $ npm install [It will install all required dependencies]
-$ npm install admin-lte@v3.0.0-alpha.0 --save [If need admin-lte framework]
+$ npm install admin-lte@v3.0.0-alpha.2 --save [If need admin-lte framework]
 $ composer require laravel/passport [For Additional Libraries - Optional]
 
 ______
@@ -21,4 +21,7 @@ $ php artisan migrate
 ______
 Step 4: Generate Authentication
 Run this command to generate authentication system
-$ php artisan make:auth
+$ php artisan make:auth [Run migration again]
+
+______
+Step 5: 
