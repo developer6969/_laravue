@@ -28,4 +28,6 @@ Step 5: Install Fontawsome
 $ npm install --save-dev @fortawesome/fontawesome-free
 
 ______
-Step 6: 
+Step 6: Install Vue.js
+$ npm install vue
+$ npm install vue-router

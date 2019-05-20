@@ -30,7 +30,8 @@
                     </router-link>
                 </li>
 
-                @can('isAdmin')   
+                <!-- <li class="nav-header">MANAGMENT</li> -->
+
                 <li class="nav-item has-treeview menu-close">
                     <a href="/users" class="nav-link">
                         <i class="fas fa-users d-icon"></i>
@@ -59,7 +60,6 @@
                         </li>
                     </ul>
                 </li>
-                @endcan
 
                 <li class="nav-item">
                     <router-link to="/products" class="nav-link">
@@ -67,12 +67,14 @@
                         <p class="d-text"> Products </p>
                     </router-link>
                 </li>
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-capsules d-icon"></i>
                         <p class="d-text"> Nutrition </p>
                     </a>
                 </li>
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-carrot d-icon"></i>
@@ -81,21 +83,22 @@
                 </li>
 
 
-
-                {{-- <li class="nav-header">COMMUNICATION</li>
-                </li> --}}
+                <!-- <li class="nav-header">COMMUNICATION</li> -->
+                
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-bullhorn d-icon"></i>
                         <p class="d-text"> Announcements </p>
                     </a>
                 </li>
+
                  <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-comments d-icon"></i>
                         <p class="d-text"> Group Chat </p>
                     </a>
                 </li> 
+
                  <li class="nav-item has-treeview menu-close">
                     <a href="#" class="nav-link">
                         <i class="fas fa-users d-icon"></i>
@@ -116,6 +119,7 @@
                         </li>
                     </ul>
                 </li>
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-blog d-icon"></i>
@@ -126,14 +130,12 @@
                     </a>
                 </li>
 
-                @can('isAdmin')    
                 <li class="nav-item">
                     <router-link to="/developer" class="nav-link">
                         <i class="fas fa-code d-icon"></i>
                         <p class="d-text"> Developer </p>
                     </router-link>
                 </li>
-                @endcan
 
                 <li class="nav-item">
                     <router-link to="/profile" class="nav-link">
@@ -141,14 +143,12 @@
                         <p class="d-text"> Profile </p>
                     </router-link>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('logout') }}"
-                        onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();">
-                        <i class="fas fa-power-off d-icon"></i>
-                        <p>{{ __('Logout') }}</p>
-                    </a>
 
+                <li class="nav-item">
+                    <router-link to="{{ route('logout') }}" class="nav-link">
+                        <i class="fas fa-power-off d-icon"></i>
+                        <p class="d-text"> Logout </p>
+                    </router-link>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
                     </form>
