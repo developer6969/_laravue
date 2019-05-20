@@ -1,0 +1,24 @@
+﻿Step 1: Install Laravel
+In the first step, we require to get fresh Laravel application using below command, 
+So open your terminal OR command prompt and run below command:
+$ composer create-project --prefer-dist laravel/laravel _laravue
+
+______
+Step 2: Install Dependencies
+$ npm install [It will install all required dependencies]
+$ npm install admin-lte@v3.0.0-alpha.0 --save [If need admin-lte framework]
+$ composer require laravel/passport [For Additional Libraries - Optional]
+
+______
+Step 3: Config database & run Migration
+First create a new db at localhost/phpmyadmin, and then open .env file :
+DB_DATABASE=laravue_db
+DB_USERNAME=root
+DB_PASSWORD=
+Then run migration command to create basic files in db :
+$ php artisan migrate
+
+______
+Step 4: Generate Authentication
+Run this command to generate authentication system
+$ php artisan make:auth
