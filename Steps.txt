@@ -31,3 +31,10 @@ ______
 Step 6: Install Vue.js
 $ npm install vue
 $ npm install vue-router
+
+
+
+______
+Step 10: Install v-form library for laravel 
+visit github : https://github.com/cretueusebiu/vform
+$ npm i axios vform

@@ -6,6 +6,12 @@ require('./bootstrap');
 window.Vue = require('vue');
 import VueRouter from "vue-router";
 
+// Import v-form packages
+import { Form, HasError, AlertError } from "vform";
+// Registring Global Component [i.e. Can be accessed anywhere]
+window.Form = Form;
+Vue.component(HasError.name, HasError);
+Vue.component(AlertError.name, AlertError);
 
 
 /* STEP 2 : 
@@ -47,7 +53,7 @@ const routes = [
     }
 ];
 
-/* STEP 3b : Registring Individual Components
+/* STEP 3b : Registring Individual Components [Globally]
  */
 Vue.component(
     "page-not-found",
