@@ -17,9 +17,13 @@ $fa-font-path: "../webfonts";
 // Admin-LTE
 @import '../../node_modules/admin-lte/dist/css/adminlte.css';
 
+.img-logo {
+     -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+      filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(1500%) contrast(0.8);
+}
+
 .text-small {
     font-size: 1rem !important;
-
 }
 
 .btn-sm {

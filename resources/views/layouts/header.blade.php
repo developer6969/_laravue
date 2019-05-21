@@ -4,16 +4,16 @@
         <li class="nav-item">
             <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
         </li>
-        {{-- <li class="nav-item d-none d-sm-inline-block">
-            <a href="#" class="nav-link">Home</a>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Android</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="#" class="nav-link">Contact</a>
-        </li> --}}
+            <a href="#" class="nav-link">iOs</a>
+        </li>
     </ul>
 
     <!-- SEARCH FORM -->
-    <div class="input-group input-group-sm" style="max-width: 220px;">
+    <div class="input-group input-group-sm">
         <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
         <div class="input-group-append">
             <button class="btn btn-navbar">
@@ -30,7 +30,7 @@
                 <i class="far fa-comments  d-icon"></i>
                 <span class="badge badge-danger navbar-badge">3</span>
             </a>
-            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" style="width: 250px;">
                 <a href="#" class="dropdown-item">
                     <!-- Message Start -->
                     <div class="media">
@@ -47,7 +47,7 @@
                     <!-- Message End -->
                 </a>
             <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
+            <a href="#" class="dropdown-item" style="width: 250px;">
                 <!-- Message Start -->
                 <div class="media">
                     <img src="img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
@@ -63,7 +63,7 @@
                 <!-- Message End -->
             </a>
             <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
+            <a href="#" class="dropdown-item" style="width: 250px;">
                 <!-- Message Start -->
                 <div class="media">
                     <img src="img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
@@ -79,7 +79,7 @@
                 <!-- Message End -->
             </a>
             <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+            <a href="#" class="dropdown-item dropdown-footer text-center">See All Messages</a>
             </div>
         </li>
         <!-- Notifications Dropdown Menu -->
@@ -91,17 +91,17 @@
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                 <span class="dropdown-header">15 Notifications</span>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
+                <a href="#" class="dropdown-item" style="width: 250px;">
                     <i class="fa fa-envelope mr-2"></i> 4 new messages
                     <span class="float-right text-muted text-sm">3 mins</span>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
+                <a href="#" class="dropdown-item" style="width: 250px;">
                     <i class="fa fa-users mr-2"></i> 8 friend requests
                     <span class="float-right text-muted text-sm">12 hours</span>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
+                <a href="#" class="dropdown-item" style="width: 250px;">
                     <i class="fa fa-file mr-2"></i> 3 new reports
                     <span class="float-right text-muted text-sm">2 days</span>
                 </a>
