@@ -33,6 +33,7 @@
 
                 <!-- <li class="nav-header">MANAGMENT</li> -->
 
+                @can('isAdmin')
                 <li class="nav-item has-treeview menu-close">
                     <a href="#" class="nav-link">
                         <i class="fas fa-users d-icon indigo"></i>
@@ -61,6 +62,7 @@
                         </li>
                     </ul>
                 </li>
+                @endcan
 
                 <li class="nav-item">
                     <router-link to="/products" class="nav-link">
@@ -131,12 +133,14 @@
                     </router-link>
                 </li>
 
+                @can('isAdmin')
                 <li class="nav-item">
                     <router-link to="/developer" class="nav-link">
                         <i class="fas fa-code d-icon cyan"></i>
                         <p class="d-text"> Developer </p>
                     </router-link>
                 </li>
+                @endcan
 
                 <li class="nav-item">
                     <router-link to="/profile" class="nav-link">

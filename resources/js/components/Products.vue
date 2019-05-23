@@ -14,8 +14,20 @@
     </div>
 </template>
 
+
 <script>
     export default {
+        methods: {
+            some() {
+                axios.get('/api/user')
+                .then(response => {
+                    console.log(response.data);
+                });
+            },
+        },
+        created() {
+            this.some();
+        },
         mounted() {
             console.log('Component mounted.')
         }
