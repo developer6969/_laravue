@@ -38,3 +38,121 @@ ______
 Step 10: Install v-form library for laravel 
 visit github : https://github.com/cretueusebiu/vform
 $ npm i axios vform
+
+______
+Step 12 : Create API Controller 
+https://laravel.com/docs/5.8/controllers
+
+
+______
+Step 13 : Install Moment package
+https://momentjs.com/
+$npm install moment --save
+
+______
+Step 14 : Install ProgressBar package
+http://hilongjw.github.io/vue-progressbar/
+$ npm install vue-progressbar --save
+
+______
+Step 15 : Install SweatAlert2
+https://github.com/t4t5/sweetalert
+https://sweetalert2.github.io/
+$ npm install --save sweetalert2
+
+______
+Step 16 : Create Custom Event
+https://vuejs.org/v2/guide/components-custom-events.html
+Register a new global instance of vue in app.js by name fire
+ * Use Laravel Echo / Pusher at server level for bigger applications
+
+ ______
+ Step 17 : Install Laravel passport
+ Its a security package for API
+ https://laravel.com/docs/5.8/passport
+ https://oauth2.thephpleague.com/terminology/
+ $ composer require laravel/passport
+ $ php artisan migrate
+ $ php artisan passport:install
+Encryption keys generated successfully.
+Personal access client created successfully.
+    Client ID: 1
+    Client secret: IfZ9FUschge5R7XjkkkekQjoSY4vTtCueoHYgcLQ
+Password grant client created successfully.
+    Client ID: 2
+    Client secret: 2nc6zDXvOOcAah8qnDEUahNcl76aWwoUAkBH
+
+Frontend Vue.Js Component for passport
+$ php artisan vendor:publish --tag=passport-components
+
+
+______
+STEP 18 : Install Laravel Vue Pagination
+https://github.com/gilbitron/laravel-vue-pagination
+$ npm install laravel-vue-pagination
+
+
+
+
+
+
+$ php artisan passport:client
+
+ Which user ID should the client be assigned to?:
+ > 1
+
+ What should we name the client?:
+ > andro
+
+ Where should we redirect the request after authorization? [http://localhost/auth/callback]:
+ > /
+
+New client created successfully.
+Client ID: 1
+Client secret: fuxhwD8xQE3Fbw6bwM9UgRoqkSDXZDJNiEgLWBDk
+
+
+
+
+
+
+
+
+$ php artisan route:list
++--------+-----------+-----------------------------------------+-----------------------------------+---------------------------------------------------------------------------+--------------+| Domain | Method    | URI                                     | Name                              | Action                                                                    | Middleware   |
++--------+-----------+-----------------------------------------+-----------------------------------+---------------------------------------------------------------------------+--------------+|        | GET|HEAD  | /                                       |                                   | Closure                                                                   | web          |
+|        | POST      | api/login                               |                                   | App\Http\Controllers\API\UserController@login                             | api,auth:api |
+|        | POST      | api/register                            |                                   | App\Http\Controllers\API\UserController@register                          | api,auth:api |
+|        | GET|HEAD  | api/user                                | user.index                        | App\Http\Controllers\API\UserController@index                             | api,auth:api ||        | POST      | api/user                                | user.store                        | App\Http\Controllers\API\UserController@store                             | api,auth:api |
+|        | GET|HEAD  | api/user/{user}                         | user.show                         | App\Http\Controllers\API\UserController@show                              | api,auth:api |
+|        | DELETE    | api/user/{user}                         | user.destroy                      | App\Http\Controllers\API\UserController@destroy                           | api,auth:api |
+|        | PUT|PATCH | api/user/{user}                         | user.update                       | App\Http\Controllers\API\UserController@update                            | api,auth:api |
+|        | GET|HEAD  | dashboard                               |                                   | Closure                                                                   | web          |
+|        | GET|HEAD  | home                                    | home                              | App\Http\Controllers\HomeController@index                                 | web,auth     |
+|        | POST      | login                                   |                                   | App\Http\Controllers\Auth\LoginController@login                           | web,guest    |
+|        | GET|HEAD  | login                                   | login                             | App\Http\Controllers\Auth\LoginController@showLoginForm                   | web,guest    |
+|        | POST      | logout                                  | logout                            | App\Http\Controllers\Auth\LoginController@logout                          | web          |
+|        | POST      | oauth/authorize                         | passport.authorizations.approve   | Laravel\Passport\Http\Controllers\ApproveAuthorizationController@approve  | web,auth     |
+|        | GET|HEAD  | oauth/authorize                         | passport.authorizations.authorize | Laravel\Passport\Http\Controllers\AuthorizationController@authorize       | web,auth     |
+|        | DELETE    | oauth/authorize                         | passport.authorizations.deny      | Laravel\Passport\Http\Controllers\DenyAuthorizationController@deny        | web,auth     |
+|        | POST      | oauth/clients                           | passport.clients.store            | Laravel\Passport\Http\Controllers\ClientController@store                  | web,auth     |
+|        | GET|HEAD  | oauth/clients                           | passport.clients.index            | Laravel\Passport\Http\Controllers\ClientController@forUser                | web,auth     |
+|        | DELETE    | oauth/clients/{client_id}               | passport.clients.destroy          | Laravel\Passport\Http\Controllers\ClientController@destroy                | web,auth     |
+|        | PUT       | oauth/clients/{client_id}               | passport.clients.update           | Laravel\Passport\Http\Controllers\ClientController@update                 | web,auth     |
+|        | POST      | oauth/personal-access-tokens            | passport.personal.tokens.store    | Laravel\Passport\Http\Controllers\PersonalAccessTokenController@store     | web,auth     |
+|        | GET|HEAD  | oauth/personal-access-tokens            | passport.personal.tokens.index    | Laravel\Passport\Http\Controllers\PersonalAccessTokenController@forUser   | web,auth     |
+|        | DELETE    | oauth/personal-access-tokens/{token_id} | passport.personal.tokens.destroy  | Laravel\Passport\Http\Controllers\PersonalAccessTokenController@destroy   | web,auth     |
+|        | GET|HEAD  | oauth/scopes                            | passport.scopes.index             | Laravel\Passport\Http\Controllers\ScopeController@all                     | web,auth     |
+|        | POST      | oauth/token                             | passport.token                    | Laravel\Passport\Http\Controllers\AccessTokenController@issueToken        | throttle     |
+|        | POST      | oauth/token/refresh                     | passport.token.refresh            | Laravel\Passport\Http\Controllers\TransientTokenController@refresh        | web,auth     |
+|        | GET|HEAD  | oauth/tokens                            | passport.tokens.index             | Laravel\Passport\Http\Controllers\AuthorizedAccessTokenController@forUser | web,auth     |
+|        | DELETE    | oauth/tokens/{token_id}                 | passport.tokens.destroy           | Laravel\Passport\Http\Controllers\AuthorizedAccessTokenController@destroy | web,auth     |
+|        | POST      | password/email                          | password.email                    | App\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail     | web,guest    |
+|        | GET|HEAD  | password/reset                          | password.request                  | App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm    | web,guest    |
+|        | POST      | password/reset                          | password.update                   | App\Http\Controllers\Auth\ResetPasswordController@reset                   | web,guest    |    |                                                                                                                                                                                         |
+|        | GET|HEAD  | password/reset/{token}                  | password.reset                    | App\Http\Controllers\Auth\ResetPasswordController@showResetForm           | web,guest    |    |                                                                                                                                                                                         |
+|        | GET|HEAD  | register                                | register                          | App\Http\Controllers\Auth\RegisterController@showRegistrationForm         | web,guest    |    |                                                                                                                                                                                     ----+
+|        | POST      | register                                |                                   | App\Http\Controllers\Auth\RegisterController@register                     | web,guest    |
+|        | GET|HEAD  | {fallbackPlaceholder}                   |                                   | Closure                                                                   | web
+    |
++--------+-----------+-----------------------------------------+-----------------------------------+---------------------------------------------------------------------------+--------------+
